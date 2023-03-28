@@ -1,5 +1,5 @@
-import bot from './assets/bot.svg?url'
-import user from './assets/user.svg?url'
+import bot from './assets/bot.svg'
+import user from './assets/user.svg'
 
 
 const form = document.querySelector('form')
@@ -87,7 +87,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('', {
+    const response = await fetch('http://127.0.0.1:5174/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
